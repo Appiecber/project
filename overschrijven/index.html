@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekeningbeheer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Rekeningbeheer Dashboard</h1>
+    <h2>Uw Rekeningen</h2>
+    <ul id="accounts-list">
+      <li>Betaalrekening: <span>€1500.00</span></li>
+      <li>Spaarrekening: <span>€3200.50</span></li>
+    </ul>
+    <button id="add-account-btn">Nieuwe Rekening Aanmaken</button>
+    <div id="new-account-form" style="display: none;">
+      <input type="text" id="account-name" placeholder="Rekeningnaam">
+      <input type="number" id="account-balance" placeholder="Startsaldo (€)">
+      <button id="save-account-btn">Opslaan</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
