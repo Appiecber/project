@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geld Overschrijven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Geld Overschrijven</h1>
+    <form id="overschrijfForm">
+        <label for="vanRekening">Van rekening:</label>
+        <select id="vanRekening">
+            <option value="betaalrekening" data-saldo="1500">Betaalrekening (€1500)</option>
+        </select>
+
+        <label for="naarRekening">Naar rekening:</label>
+        <select id="naarRekening">
+            <option value="spaarrekening">Spaarrekening</option>
+        </select>
+
+        <label for="bedrag">Bedrag (€):</label>
+        <input type="number" id="bedrag" min="1" placeholder="Bijvoorbeeld 100" required>
+
+        <button type="submit">Overschrijven</button>
+        <div id="feedback"></div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
