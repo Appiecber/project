@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactiegeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Transactiegeschiedenis</h1>
+    <div>
+        <label for="typeFilter">Filter op type:</label>
+        <select id="typeFilter">
+            <option value="all">Alle</option>
+            <option value="inkomend">Inkomend</option>
+            <option value="uitgaand">Uitgaand</option>
+        </select>
+
+        <label for="dateFilter">Filter op datum:</label>
+        <input type="date" id="dateFilter">
+
+        <button id="filterButton">Filter</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Datum</th>
+                <th>Bedrag</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTable">
+            <!-- Transacties worden hier toegevoegd -->
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
