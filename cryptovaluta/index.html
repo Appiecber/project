@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptovaluta Overzicht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cryptovaluta Overzicht</h2>
+        <div class="crypto-info">
+            <p>Bitcoin: €<span id="bitcoinSaldo">0.00</span> (90000 per eenheid)</p>
+            <p>Ethereum: €<span id="ethereumSaldo">0.00</span> (4800 per eenheid)</p>
+            <p>Litecoin: €<span id="litecoinSaldo">0.00</span> (250 per eenheid)</p>
+        </div>
+
+        <label for="cryptoSelect">Kies een cryptovaluta:</label>
+        <select id="cryptoSelect">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+        </select>
+
+        <label for="bedrag">Bedrag (in €):</label>
+        <input type="number" id="bedrag" placeholder="Voer bedrag in">
+
+        <button onclick="koopCrypto()">Kopen</button>
+        <button onclick="verkoopCrypto()">Verkopen</button>
+
+        <p id="melding"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
