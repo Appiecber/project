@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleggingsapplicatie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Beleggingen</h1>
+    <p>Beschikbaar saldo: <span id="saldo">€760.00</span></p>
+    
+    <label for="categorie">Kies een categorie:</label>
+    <select id="categorie">
+        <option>Aandelen</option>
+        <option>Crypto</option>
+    </select>
+    
+    <label for="product">Kies een product:</label>
+    <select id="product">
+        <option>TechCorp</option>
+        <option>CryptoCoin</option>
+    </select>
+    
+    <p>Huidige prijs: €<span id="prijs">120.00</span></p>
+    <p>In bezit: <span id="aantal">2</span> eenheden</p>
+    
+    <label for="bedrag">Bedrag:</label>
+    <input type="number" id="bedrag" value="0">
+    
+    <button onclick="koopAandelen()">Kopen</button>
+    <button onclick="verkoopAandelen()">Verkopen</button>
+    
+    <p id="melding"></p>
+    
+    <script src="app.js"></script>
+</body>
+</html>
